@@ -170,9 +170,9 @@ window.PORTFOLIO = {
   /* ---------- SKILLS ---------- */
   skills: [
     { group: "CAD",         items: ["SolidWorks", "Fusion360"] },
-    { group: "Fabrication", items: ["3D Printing", "Laser Cutting (Trotec)", "Prototyping"] },
+    { group: "Fabrication", items: ["3D Printing", "Laser Cutting (Trotec)", "Prototyping", "Walker Department of Mechanical Engineering Shop Certification"] },
     { group: "Analysis",    items: ["FEA", "MATLAB"] },
-    { group: "Other",       items: ["Report Writing", "Teamwork", "Walker Department of Mechanical Engineering Shop Certification"] },
+    { group: "Other",       items: ["Report Writing", "Teamwork"},
   ],
 
   /* ---------- AWARDS ---------- */
