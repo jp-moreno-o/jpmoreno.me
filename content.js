@@ -12,7 +12,7 @@ window.PORTFOLIO = {
   /* ---------- ABOUT YOU ---------- */
   name: "John Paul Moreno",
   initials: "JM",
-  photo: "images/JPLBR",                            // optional headshot: "images/headshot.jpg"
+  photo: "images/JPLBR.jpg",                            // optional headshot: "images/headshot.jpg"
   headline: "Mechanical engineering student focused on CAD, prototyping, and design for manufacturing.",
   school: "Mechanical Engineering at UT Austin, class of 2028",
   location: "Austin, TX",
@@ -73,7 +73,7 @@ window.PORTFOLIO = {
       imagePosition: "50% 50%",
       gallery: [
         { src: "images/baja-pedal-box.jpg", alt: "Looking down into the Baja car's pedal box with master cylinders and brake lines inside the tube frame" },
-         {src: "images/LBRCARSV.jpg, alt": "Side view of EJH-412"],
+        { src: "images/LBRCARSV.jpg, alt": "Side view of EJH-412"},],
       intro: "The University of Texas at Austin’s collegiate design competition team that designs and optimizes a single-seat off-road vehicle.",
       bullets: [
         "Led pedal box geometry and prototyping, after evaluation pivoted to premanufactured pedals to reduce risk.",
