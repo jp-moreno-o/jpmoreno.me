@@ -13,8 +13,6 @@ window.PORTFOLIO = {
   name: "John Paul Moreno",
   initials: "JM",
   photo: "images/JPLBR.jpg",                            // optional headshot: "images/headshot.jpg"
-  headline: "Mechanical engineering student focused on CAD, prototyping, and design for manufacturing.",
-  school: "Mechanical Engineering at UT Austin, class of 2028",
   location: "Austin, TX",
 
   about: "I'm a mechanical engineering student at The University of Texas at Austin. I've worked on 3D printed housings at Gel Blaster Nexus, parametric equipment models at Mirada3D, and ergonomics for the Longhorn Baja SAE team.",
