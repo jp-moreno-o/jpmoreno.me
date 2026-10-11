@@ -220,6 +220,10 @@
   .body h2 { font-size: 1.05rem; font-weight: 500; margin: 34px 0 10px; }
   .body ul { margin: 0; padding-left: 1.1em; }
   .body li { margin-bottom: 12px; font-size: 1.05rem; }
+  .proj-links { margin: 0; padding: 0; list-style: none; }
+  .proj-links li { margin: 0 0 10px; }
+  .proj-links a { display: inline-block; font-size: 1rem; padding: 8px 18px; border: 1px solid var(--ink); border-radius: 99px; text-decoration: none; }
+  .proj-links a:hover { background: var(--ink); color: #0a1020; }
   .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; padding: 0; list-style: none; }
   .tags li { margin: 0; font-size: .85rem; border: 1px solid var(--line); border-radius: 99px; padding: 3px 14px; }
   .pager { display: flex; justify-content: space-between; gap: 20px; margin-top: 70px; padding-top: 22px; border-top: 1px solid var(--line); font-size: .95rem; }
@@ -389,6 +393,14 @@
     }
     if (p.notes) {
       p.notes.split(/\n\s*\n/).forEach(function (para) { body.appendChild(el('p', { text: para })); });
+    }
+    if (p.links && p.links.length) {
+      body.appendChild(el('h2', { text: 'Read more' }));
+      var lk = el('ul', { 'class': 'proj-links' });
+      p.links.forEach(function (l) {
+        lk.appendChild(el('li', null, [el('a', { href: l.url, target: '_blank', rel: 'noopener', text: l.label })]));
+      });
+      body.appendChild(lk);
     }
     if (p.tags && p.tags.length) {
       body.appendChild(el('h2', { text: 'Tools and methods' }));

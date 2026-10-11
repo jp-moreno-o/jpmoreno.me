@@ -42,7 +42,9 @@ window.PORTFOLIO = {
               caption (title), text (optional line under the title).
      intro:   optional short paragraph at the top of the detail page
      bullets: your resume bullets, word for word
-     notes:   optional extra paragraphs for a deeper write-up ("" to hide) */
+     notes:   optional extra paragraphs for a deeper write-up ("" to hide)
+     links:   optional buttons under the bullets, e.g. a paper or repo:
+              [{ label: "Read the paper", url: "research-paper.pdf" }] */
   projects: [
     {
       slug: "battle-bay-pcb-housings",
@@ -82,12 +84,13 @@ window.PORTFOLIO = {
       ],
       intro: "The University of Texas at Austin’s collegiate design competition team that designs and optimizes a single-seat off-road vehicle.",
       bullets: [
-        "Led pedal box geometry and prototyping, after evaluation pivoted to premanufactured pedals to reduce risk.",
+        "Led the design of the throttle pedal and assisted in the initial design of the brake pedal, including pedal box geometry and prototyping; after evaluation, pivoted to a premanufactured pedal assembly to reduce risk.",
+        "Integrated the sourced pedal assembly with the car's other subsystems: milled the pedal's mounting tubes on a 3-axis mill, routed the brake lines, and made a cable assembly routed to the engine's carburetor.",
+        "Coordinated modification of the racing seat mounting plate to integrate to the chassis and finalized the driver harness mounting point.",
         "Optimized aluminum body-panels by reducing sheet sizes from 4x10 ft to 3x4 ft, lowering material costs by over $600.",
-        "Coordinated modification of racing seat mounting plate to integrate to chassis; routed brake lines; finalized driver harness mounting point.",
       ],
       tags: ["Prototyping", "Ergonomics", "SAE Baja", "3-Axis Mill"],
-      notes: "I led the design of the throttle pedal and assisted in the initial design of the brake pedal. After the team switched to a sourced pedal assembly, I worked on integrating it with the car's other subsystems. That included routing the brake lines, making a cable assembly, and routing it to the engine's carburetor.\n\nI also milled the pedal's mounting tubes on a 3-axis mill.",
+      notes: "",
     },
     {
       slug: "mirada3d-equipment-models",
@@ -132,6 +135,9 @@ window.PORTFOLIO = {
       ],
       tags: ["SOLIDWORKS", "Manual Mill", "PTFE"],
       notes: "",
+      links: [
+        { label: "Read the research paper (PDF)", url: "research-paper.pdf" },
+      ],
     },
     {
       slug: "me302-battle-bot",
