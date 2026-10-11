@@ -36,7 +36,10 @@ window.PORTFOLIO = {
      slug:    short web address for the page (letters and dashes only)
      title:   the descriptive title printed on the grid square
      image:   the grid picture ("" gives a plain text tile)
-     gallery: more pictures shown on the detail page
+     gallery: pictures shown on the detail page. One picture shows as a
+              single image; two or more become a vertical timeline.
+              Each entry: src, alt, label (small tab on the card),
+              caption (title), text (optional line under the title).
      intro:   optional short paragraph at the top of the detail page
      bullets: your resume bullets, word for word
      notes:   optional extra paragraphs for a deeper write-up ("" to hide) */
@@ -72,8 +75,10 @@ window.PORTFOLIO = {
       image: "images/baja-pedal-box.jpg",
       imagePosition: "50% 50%",
       gallery: [
-        { src: "images/baja-pedal-box.jpg", alt: "Looking down into the Baja car's pedal box with master cylinders and brake lines inside the tube frame" },
-        { src: "images/LBRCARSV.jpg", alt: "Side view of EJH-412" },
+        { src: "images/baja-pedals-stage1.jpg", alt: "Top view of the first-stage pedal assembly clamped to the frame with magnetic welding squares", label: "Stage 1", caption: "Stage 1 pedal assembly", text: "" },
+        { src: "images/baja-tube-mount-manufacturing.jpg", alt: "Pedal mounting tube stock held in a band saw vise with blue tape marks", label: "Manufacturing", caption: "Pedal mounting tube stock", text: "" },
+        { src: "images/baja-pedal-box.jpg", alt: "Looking down into the Baja car's pedal box with master cylinders and brake lines inside the tube frame", label: "Integration", caption: "Pedal box with brake lines", text: "" },
+        { src: "images/LBRCARSV.jpg", alt: "Side view of EJH-412", label: "Vehicle", caption: "Side view of EJH-412", text: "" },
       ],
       intro: "The University of Texas at Austin’s collegiate design competition team that designs and optimizes a single-seat off-road vehicle.",
       bullets: [
@@ -94,8 +99,8 @@ window.PORTFOLIO = {
       image: "images/mirada3d-tank.jpg",
       imagePosition: "50% 62%",
       gallery: [
-        { src: "images/mirada3d-tank.jpg", alt: "A silver 3D printed horizontal pressure vessel model inside a Bambu Lab printer" },
-        { src: "images/mirada3d-printer-bed.jpg", alt: "A 3D printer bed covered in printed brackets, washers, and small parts" },
+        { src: "images/mirada3d-tank.jpg", alt: "A silver 3D printed horizontal pressure vessel model inside a Bambu Lab printer", label: "Print", caption: "Pressure vessel model", text: "" },
+        { src: "images/mirada3d-printer-bed.jpg", alt: "A 3D printer bed covered in printed brackets, washers, and small parts", label: "Print", caption: "Printed small parts", text: "" },
       ],
       intro: "",
       bullets: [
@@ -116,7 +121,8 @@ window.PORTFOLIO = {
       image: "images/research-furnace.jpg",
       imagePosition: "50% 35%",
       gallery: [
-        { src: "images/research-furnace.jpg", alt: "An open tube furnace on a lab bench" },
+        { src: "images/research-furnace.jpg", alt: "An open tube furnace on a lab bench", label: "Setup", caption: "Tube furnace", text: "" },
+        { src: "images/research-probe-furnace-test.jpg", alt: "The four-point probe fixture with springs sitting inside the furnace tube during a test", label: "Testing", caption: "Probe fixture in the furnace", text: "" },
       ],
       intro: "",
       bullets: [
@@ -137,7 +143,8 @@ window.PORTFOLIO = {
       image: "images/battle-bot.jpg",
       imagePosition: "50% 60%",
       gallery: [
-        { src: "images/battle-bot.jpg", alt: "The finished battle bot with a gray wedge body, green frame, blue 3D printed parts, and a green roller" },
+        { src: "images/bb-wheel.jpg", alt: "A white 3D printed six-spoke wheel held between two fingers", label: "Components", caption: "3D printed wheel", text: "" },
+        { src: "images/battle-bot.jpg", alt: "The finished battle bot with a gray wedge body, green frame, blue 3D printed parts, and a green roller", label: "Finished bot", caption: "Assembled battle bot", text: "" },
       ],
       intro: "",
       bullets: [
