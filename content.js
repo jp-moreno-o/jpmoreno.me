@@ -73,7 +73,7 @@ window.PORTFOLIO = {
       imagePosition: "50% 50%",
       gallery: [
         { src: "images/baja-pedal-box.jpg", alt: "Looking down into the Baja car's pedal box with master cylinders and brake lines inside the tube frame" },
-        { src: "images/LBRCARSV.jpg, alt": "Side view of EJH-412"},],
+        { src: "images/LBRCARSV.jpg", alt: "Side view of EJH-412"},],
       intro: "The University of Texas at Austin’s collegiate design competition team that designs and optimizes a single-seat off-road vehicle.",
       bullets: [
         "Led pedal box geometry and prototyping, after evaluation pivoted to premanufactured pedals to reduce risk.",
@@ -172,7 +172,7 @@ window.PORTFOLIO = {
     { group: "CAD",         items: ["SolidWorks", "Fusion360"] },
     { group: "Fabrication", items: ["3D Printing", "Laser Cutting (Trotec)", "Prototyping", "Walker Department of Mechanical Engineering Shop Certification"] },
     { group: "Analysis",    items: ["FEA", "MATLAB"] },
-    { group: "Other",       items: ["Report Writing", "Teamwork"},
+    { group: "Other",       items: ["Report Writing", "Teamwork"]},
   ],
 
   /* ---------- AWARDS ---------- */
